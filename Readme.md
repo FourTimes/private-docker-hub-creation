@@ -73,7 +73,7 @@ make an dns entry with in client level
 
     echo "10.0.0.2 dodonot.in" | sudo tee -a /etc/hosts
     mkdir -p /etc/docker/certs.d/dodonot.in
-    scp root@dodonot.in:/etc/certs/ca.crt /etc/docker/certs.d/dodonotdo.in/
+    scp root@dodonot.in:/etc/certs/ca.crt /etc/docker/certs.d/dodonot.in/
     systemctl restart docker
 
 ```
