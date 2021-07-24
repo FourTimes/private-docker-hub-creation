@@ -14,6 +14,12 @@ Custom domain name map with repo-server
 
     Here I assign with dodonot.in domain in to repo-server.
 
+```sh
+
+    echo "10.0.0.2 dodonot.in" | sudo tee -a /etc/hosts
+
+```
+
 Create the certificate for the usage of secure auth 
 
     openssl req -newkey rsa:4096 -nodes -sha256 -keyout ca.key -x509 -days 365 -out ca.crt
