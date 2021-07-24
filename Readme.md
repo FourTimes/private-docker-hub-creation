@@ -46,7 +46,7 @@ create the repo server using the registry:2 docker image
         -v /etc/certs:/certs  \
         -e REGISTRY_HTTP_ADDR=0.0.0.0:443 \  
         -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/ca.crt \
-        -e REGISTRY_HTTP_TLS_KEY=/certs/ca.key 
+        -e REGISTRY_HTTP_TLS_KEY=/certs/ca.key \
         -p 443:443 \
         registry:2
 
