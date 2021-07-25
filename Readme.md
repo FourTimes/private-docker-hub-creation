@@ -33,7 +33,8 @@ copy the certs file into target location
 
     cp ca.crt /etc/certs
     cp ca.key /etc/certs
-
+    mkdir -p /etc/docker/certs.d/dodonot.in
+    cp ca.crt /etc/docker/certs.d/dodonot.in/
 ```
 
 create the repo server using the registry:2 docker image
